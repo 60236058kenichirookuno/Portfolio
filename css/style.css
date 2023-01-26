@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Hiragino Kaku Gothic Pro','Meiryo','sans-serif';
+    font-size: 15px;
+    border-top: 10px solid #79a1b1;
+    width: 1200px;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.logo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;;
+    margin-bottom: 30px;
+}
+.w_inner{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.header ul{
+    display:flex;
+}
+.header ul li{
+    width: 600px;
+    text-align: center;
+    border-right: 1px solid #333;
+    font-size: 20px;
+}
+.header ul li:first-child{
+    border-left: 1px solid #333;
+}
+.header ul li a{
+    display: block;
+}
+.header_image{
+    text-align: center;
+}
+.container_top1 .top1_block{
+    display: flex;
+    justify-content: space-between;
+}
+.container_top1 .top1{
+    width: 400;
+    text-align: center;
+}
+.container_top1 h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.container_top1 .top1 img{
+    margin-bottom: 20px;
+}
+.container_top1 .top1 .ttl{
+    font-weight: bold;
+    font-size: 18px;
+}
+.container_top1 .top1 .explain{
+    margin-bottom:20px;
+}
+.container_top1 .top1 a{
+    background: #79a1b1;
+    color:#fff;
+    padding: 15px 20px 12px;
+}
+.footer{
+    margin-top: 40px;
+}
+.pp_link{
+    text-align: right;
+}
+.copy{
+    text-align: center;
+    background:#79a1b1;
+    color: #fff;
+    font-size:  12px;
+    padding:  7px 0 3px;
+}
