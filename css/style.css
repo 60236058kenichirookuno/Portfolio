@@ -26,6 +26,7 @@ nav ul li a{
 nav ul li a:hover{
     color:aqua;
 }
+
 .logo span{
     color: aqua;
 }
@@ -39,7 +40,7 @@ nav ul li a:hover{
 }
 
 .home{
-    padding: 100px;
+    padding: 60px;
     color: aqua;
     font-size: 40px;
 }
@@ -57,6 +58,7 @@ nav ul li a:hover{
     font-weight: bold;
     font-size: 50px;
 }
+
 
 .container{
     padding-top: 10px;
@@ -84,11 +86,17 @@ nav ul li a:hover{
     text-align: center;
     font-weight: bold;
     font-size: 24px;
+}
+.container_top1 .previous{
+    font-size: 15px;
     margin-bottom: 100px;
+    text-align: center;
 }
-.container_top1 .top1 img{
-    margin-bottom: 20px;
+
+.container_top1 .previous a:hover{
+    color:aqua;
 }
+
 .container_top1 .top1 .ttl{
     font-weight: bold;
     font-size: 18px;
