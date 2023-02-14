@@ -17,6 +17,7 @@ nav{
 nav ul li{
     display: inline-block;
     padding: 10px 25px;
+    font-size: 2vw;
 }
 nav ul li a{
     color: white;
@@ -34,15 +35,15 @@ nav ul li a:hover{
 .logo{
     color: white;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 3vw;
     letter-spacing: 1px;
     cursor: pointer;
 }
 
 .home{
-    padding: 60px;
+    padding: 30vh 3vw;
     color: aqua;
-    font-size: 40px;
+    font-size: 4vw;
 }
 
 .home #left{
@@ -56,21 +57,23 @@ nav ul li a:hover{
 .home span{
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 5vw;
 }
 
 
 .container{
-    padding-top: 10px;
+    height: 100vh;
+    width: 100%;
     color: white;
     background-color: black;
 }
 
 .container_top1{
-    height: 100vh;
-    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 .container_top1 .top1_block{
+    height: 60vh;;
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
@@ -85,39 +88,39 @@ nav ul li a:hover{
 .container_top1 h2{
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 5vh;
 }
 .container_top1 .previous{
-    font-size: 15px;
-    margin-bottom: 100px;
+    font-size: 2vh;
+    margin-bottom: 20vh;
     text-align: center;
 }
 
-.container_top1 .previous a:hover{
+.container_top1 .previous:hover{
     color:aqua;
 }
 
 .container_top1 .top1 .ttl{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 5vh;
 }
 .container_top1 .top1 .explain{
-    font-size: 12px;
+    font-size: 2vh;
     text-align: left;
-    margin-bottom:20px;
+    margin-bottom:5vh;
 }
 .top1 button{
-    font-size: 15px;
+    font-size: 3vh;
     background:rgb(63, 79, 79);
     color:#fff;
-    padding: 10px 20px 10px;
+    padding: 2vh 3vh 2vh;
     align-items:flex-end
 }
 .top1 a{
-    font-size: 15px;
+    font-size: 3vh;
     background:rgb(63, 79, 79);
     color:#fff;
-    padding: 10px 20px 10px;
+    padding: 2vh 3vh 2vh;
     align-items:flex-end
 }
 .container_top1 .top1 a:hover{
@@ -199,8 +202,8 @@ nav ul li a:hover{
     text-align: center;
 }
 .gallery img{
-    width: 180px;
-    height: 120px;
+    width: 15vw;
+    height: 10vw;
     object-fit: cover;
     padding: 10px;
     filter: grayscale(100%);
@@ -214,8 +217,8 @@ nav ul li a:hover{
     text-align: center;
 }
 .result img{
-    width: 220px;
-    height: 220px;
+    width: 20vw;
+    height: 20vw;
     object-fit: cover;
     padding: 10px;
 }
