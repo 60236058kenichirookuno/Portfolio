@@ -33,6 +33,7 @@ nav ul li a:hover{
 }
 
 .logo{
+    width: 30vw;
     color: white;
     font-weight: bold;
     font-size: 3vw;
