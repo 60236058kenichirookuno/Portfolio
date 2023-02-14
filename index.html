@@ -8,84 +8,157 @@
     <meta name="description" content=""> <!--題名の下にある説明-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css"> <!--どのスタイル-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="header w_inner">
+    <div class="hero">
+        <nav>
         <div class="logo">
-            <img src="image/maruito.png" alt="logo3">
-            <p>プライラボ</p>
-            <img src="image/maruito.png" alt="logo3">
+            <p>プ<span>ラ</span>イ<span>ラ</span>ボ</p>
         </div>
         <ul> <!--menu wo tukuru   zyunhudou-->
             <li><a href="#ply_position">より糸ベースモデル</a></li>
             <li><a href="#realtime_position">織物のリアルタイムレンダリング</a></li>
         </ul>
-    </div>
-    <div class="container w_inner" id="ply_position">
-        <div class="header_image">
-            <img src="image/ply_base.png" alt="pic">
+        </nav>
+        <div class="home">
+            <p id="left"><span>織物</span>の<span>コンピュータグラフィックス</span>を</p>
+            <p id="right">より<span>リアル</span>に</p>
         </div>
+    </div>
+    <div class="container" id="ply_position">
         <div class="container_top1">
             <h2>より糸ベースモデル</h2>
             <div class="top1_block">
                 <div class="top1">
-                    <img src="image/yomu3.png" alt="top1-1">
-                    <div class="ttl">実行方法</div>
-                    <div class="explain">tekisutogahairuyotekisutogahairuytekisutogahairuy</div>
-                    <a herf="">詳しく見る</a>
+                    <img src="image/yomu3.png" alt="top1-1" width="50%" height=width>
+                    <div class="ttl">説明</div>
+                    <div class="explain">
+                        <p>CGの忠実度を損なわずにモデルの構造を簡略化するより糸ベースモデル。より糸ベースモデルの詳しい説明は以下の「説明資料」よりご覧ください。</p>
+                    </div>
+                    <button id="modalopen1">説明資料</button>
                 </div>
                 <div class="top1">
-                    <img src="image/kanngaeru3.png" alt="top1-2">
+                    <img src="image/kanngaeru3.png" alt="top1-2" width="50%" height=width>
                     <div class="ttl">実行結果</div>
-                    <div class="explain">tekisutogahairuyotekisutogahairuytekisutogahairuy</div>
-                    <a herf="">詳しく見る</a>
+                    <div class="explain">より糸の表面に繊維の法線情報を対応させた結果です。結果画像は以下の「詳しく見る」よりご覧ください。</div>
+                    <button id="modalopen2">詳しく見る</button>
                 </div>
                 <div class="top1">
-                    <img src="image/program3.png" alt="top1-3">
+                    <img src="image/program3.png" alt="top1-3" width="50%" height=width>
                     <div class="ttl">プログラム</div>
-                    <div class="explain">tekisutogahairuyotekisutogahairuytekisutogahairuy</div>
-                    <a herf="">詳しく見る</a>
+                    <div class="explain">プログラムは以下の「GITHUB」よりご覧になれます。ダウンロードの後、「lbfgs.sln」を実行してください。実行は30秒ほどかかります。</div>
+                    <a href="https://github.com/60236058kenichirookuno/lab1.git" target="_blank">GITHUB</a>
                 </div>
             </div>
             
         </div>
     </div>
-    <div class="container w_inner" id="realtime_position">
-        <div class="header_image">
-            <img src="image/realtime_result.png" alt="pic">
-        </div>
+    <div class="container" id="realtime_position">
         <div class="container_top1">
             <h2>織物のリアルタイムレンダリング</h2>
             <div class="top1_block">
                 <div class="top1">
-                    <img src="image/yomu3.png" alt="top1-1">
+                    <img src="image/yomu3.png" alt="top1-1" width="50%" height=width>
                     <div class="ttl">実行方法</div>
-                    <div class="explain">tekisutogahairuyotekisutogahairuytekisutogahairuy</div>
-                    <a herf="">詳しく見る</a>
+                    <div class="explain">テッセレーションシェーダで繊維となる等値線を作り、それを用いた織物のリアルタイムレンダリング。織物のリアルタイムレンダリングの詳しい説明は以下の「説明資料」からご覧ください。</div>
+                    <button id="modalopen3">詳しく見る</a>
                 </div>
                 <div class="top1">
-                    <img src="image/kanngaeru3.png" alt="top1-2">
+                    <img src="image/kanngaeru3.png" alt="top1-2" width="50%" height=width>
                     <div class="ttl">実行結果</div>
-                    <div class="explain">tekisutogahairuyotekisutogahairuytekisutogahairuy</div>
-                    <a herf="">詳しく見る</a>
+                    <div class="explain">織物を構成する糸一本の実行結果です。結果画像は以下の「詳しく見る」よりご覧ください。</div>
+                    <button id="modalopen4">詳しく見る</a>
                 </div>
                 <div class="top1">
-                    <img src="image/program3.png" alt="top1-3">
+                    <img src="image/program3.png" alt="top1-3" width="50%" height=width>
                     <div class="ttl">プログラム</div>
-                    <div class="explain">tekisutogahairuyotekisutogahairuytekisutogahairuy</div>
-                    <a herf="">詳しく見る</a>
+                    <div class="explain">プログラムは以下の「GITHUB」よりご覧になれます。ダウンロードの後、「glfw3.sln」を実行してください。研究の途中であり、結果が変わる可能性があります。</div>
+                    <a href="https://github.com/60236058kenichirookuno/lab4.git" target="_blank">GITHUB</a>
                 </div>
             </div>
             
         </div>
     </div>
-    <div class="footer w_inner">
-        <div class="pp_link">
-            <a herf>岩崎研究室</a>
-        </div>
-        <div class="copy">
-            &copy;2023
+    <div id="modal1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>説明資料（詳しくはした画像をクリック）</h1>
+                <div class="modal-body">
+                    <div class="gallery">
+                        <a href="image\ply_explain\1.JPG" data-lightbox = "a" data-title="糸の構造ー三階層">
+                            <img src="image\ply_explain\1.JPG" alt="aaa" />
+                        </a>
+                        <a href="image\ply_explain\2.JPG" data-lightbox = "a" data-title="より糸ベースモデルー利点">
+                            <img src="image\ply_explain\2.JPG" alt="aaa" />
+                        </a>
+                        <a href="image\ply_explain\3.JPG" data-lightbox = "a" data-title="より糸ベースモデルー方法">
+                            <img src="image\ply_explain\3.JPG" alt="aaa" />
+                        </a>
+                        <a href="image\ply_explain\4.JPG" data-lightbox = "a" data-title="繊維のサンプリングー棄却条件を考慮したサンプリング">
+                            <img src="image\ply_explain\4.JPG" alt="aaa" />
+                        </a>
+                        <a href="image\ply_explain\5.JPG" data-lightbox = "a" data-title="可視繊維ー周囲から視認できる繊維">
+                            <img src="image\ply_explain\5.JPG" alt="aaa" />
+                        </a>
+                        <a href="image\ply_explain\6.JPG" data-lightbox = "a" data-title="シャドウイング項ー入射光がさえぎられる割合">
+                            <img src="image\ply_explain\6.JPG" alt="aaa" />
+                        </a>
+                        <a href="image\ply_explain\7.JPG" data-lightbox = "a" data-title="法線ー繊維法線情報をより糸法線情報に">
+                            <img src="image\ply_explain\7.JPG" alt="aaa" />
+                        </a>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                </div>
+            </div>
         </div>
     </div>
+    <div id="modal2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>詳しく見る</h1>
+                <div class="modal-body">
+                    <div class="result">
+                        <img src="image\ply1.png" />
+                        <img src="image\ply2.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>説明資料（詳しくはした画像をクリック）</h1>
+                <div class="modal-body">
+                    <div class="gallery">
+                        <a href="image\realtime_explain\1.JPG" data-lightbox = "a" data-title="リアルタイムレンダリング手法ーテッセレーションシェーダを用いた繊維となる等値線の作成方法">
+                            <img src="image\realtime_explain\1.JPG" alt="aaa" />
+                        </a>
+                        <a href="image\realtime_explain\2.JPG" data-lightbox = "a" data-title="繊維形状ー繊維特有の螺旋回転や繊維の方れなどの表現方法">
+                            <img src="image\realtime_explain\2.JPG" alt="aaa" />
+                        </a>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal4">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>詳しく見る</h1>
+                <div class="modal-body">
+                    <div class="result">
+                        <img src="image\realtime_result.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

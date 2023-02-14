@@ -1,57 +1,90 @@
 @charset "UTF-8";
 
-body{
-    font-family: 'Hiragino Kaku Gothic Pro','Meiryo','sans-serif';
-    font-size: 15px;
-    border-top: 10px solid #79a1b1;
-    width: 1200px;
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
 }
-a{
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 8% 0 8%;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
     text-decoration: none;
-    color: #333;
-}
-.logo{
-    text-align: center;
     font-weight: bold;
-    font-size: 40px;;
-    margin-bottom: 30px;
 }
-.w_inner{
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 80px;
+nav ul li a:hover{
+    color:aqua;
 }
-.header ul{
-    display:flex;
+.logo span{
+    color: aqua;
 }
-.header ul li{
-    width: 600px;
-    text-align: center;
-    border-right: 1px solid #333;
-    font-size: 20px;
+
+.logo{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
-.header ul li:first-child{
-    border-left: 1px solid #333;
+
+.home{
+    padding: 100px;
+    color: aqua;
+    font-size: 40px;
 }
-.header ul li a{
-    display: block;
+
+.home #left{
+    text-align: left;
 }
-.header_image{
-    text-align: center;
+
+.home #right{
+    text-align: right;
+}
+
+.home span{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.container{
+    padding-top: 10px;
+    color: white;
+    background-color: black;
+}
+
+.container_top1{
+    height: 100vh;
+    width: 100%;
 }
 .container_top1 .top1_block{
     display: flex;
     justify-content: space-between;
+    padding: 0px 20px;
 }
 .container_top1 .top1{
-    width: 400;
-    text-align: center;
+    width: 30%;
+    text-align:center;
+    margin-bottom: 20px;
 }
+
+
 .container_top1 h2{
     text-align: center;
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 .container_top1 .top1 img{
     margin-bottom: 20px;
@@ -61,23 +94,120 @@ a{
     font-size: 18px;
 }
 .container_top1 .top1 .explain{
+    font-size: 12px;
+    text-align: left;
     margin-bottom:20px;
 }
-.container_top1 .top1 a{
-    background: #79a1b1;
+.top1 button{
+    font-size: 15px;
+    background:rgb(63, 79, 79);
     color:#fff;
-    padding: 15px 20px 12px;
+    padding: 10px 20px 10px;
+    align-items:flex-end
 }
-.footer{
-    margin-top: 40px;
+.top1 a{
+    font-size: 15px;
+    background:rgb(63, 79, 79);
+    color:#fff;
+    padding: 10px 20px 10px;
+    align-items:flex-end
 }
-.pp_link{
-    text-align: right;
+.container_top1 .top1 a:hover{
+    color:aqua;
 }
-.copy{
+.top1 button:hover{
+    color:aqua;
+}
+#modal1{
+    display:none;
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    z-index: 10;
+}
+#modal2{
+    display:none;
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    z-index: 10;
+}
+#modal3{
+    display:none;
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    z-index: 10;
+}
+#modal4{
+    display:none;
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    z-index: 10;
+}
+.modal-content{
+    background-color: white;
+    margin: 15% auto;
+    width: 80%;
+    animation-name:popup;
+    animation-duration: 2s;
+}
+
+@keyframes popup{
+    from{
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.modal-header{
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+.modal-header h1{
+    font-size: 15px;
+}
+.modal-body{
+    padding: 15px 20px;
+    color: black;
+}
+.gallery{
+    margin: 10px 50px;
     text-align: center;
-    background:#79a1b1;
-    color: #fff;
-    font-size:  12px;
-    padding:  7px 0 3px;
+}
+.gallery img{
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    padding: 10px;
+    filter: grayscale(100%);
+    transition: 1.0s;
+}
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.result{
+    text-align: center;
+}
+.result img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    padding: 10px;
 }
